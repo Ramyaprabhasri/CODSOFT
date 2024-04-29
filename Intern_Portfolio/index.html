@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-r"></i>
+                    <div class="logo-text">Ramyaprabhasri</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Skill sets</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="IMG_20240403_094631.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h1>Ramyaprabhasri V R</h1>
+                    <br>
+                    <p> Skilled Web Developer proficient in HTML5, CSS3, JavaScript, React.js, and PHP. 
+                      Experienced in responsive design, cross-browser compatibility, and user experience 
+                      optimization. Collaborative team player with strong problem-solving skills. Passionate about 
+                      staying updated with industry trends!
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="https://drive.google.com/file/d/1fUVlnm7kdBD_Lb9YsR_oev1l631mJT0F/view?usp=sharing" class="btn active">Download CV</a>
+                       <a href="#" class="btn active">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="skills-section">
+            <h2>Skill Sets</h2>
+            <div class="skills">
+              <div class="skill">
+                <h3>Programming Languages</h3>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>Python</li>
+                  <li>HTML/CSS</li>
+                  <li>Java</li>
+                  <li>C++</li>
+                </ul>
+              </div>
+              <div class="skill">
+                <h3>Frameworks/Libraries</h3>
+                <ul>
+                  <li>React.js</li>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>Django</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </div>
+              <div class="skill">
+                <h3>Tools</h3>
+                <ul>
+                  <li>Git/GitHub</li>
+                  <li>Visual Studio Code</li>
+                  <li>Postman</li>
+                  <li>Docker</li>
+                  <li>MySQL/SQLite</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+            
+            <div class="row">
+        
+            <div class="image">
+                <img draggable="false" class="tilt" src="./assets/images/profile2.jpg" alt="">
+            </div>
+     </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
